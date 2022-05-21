@@ -1,0 +1,12 @@
+<bug>
+    <ID>1</ID>,
+    <Version>MacOS Monterey calculator</Version>,
+    <Summary>Не отображаеться предупреждающие окно в приложении при деление на ноль</Summary>,
+    <Req_id>2</Req_id>,
+    <Steps>ткрыть приложение, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='</Steps>,
+    <Actual_result>в полле ввода число 0,нет предупредения  'Деление на ноль запрещено'</Actual_result>,
+    <Expected_result>Появляется окно ошибки с текстом,'Деление на ноль запрещено'</Expected_result>,
+    <Severity>Minor</Severity>,
+    <Priority>Low</Priority>,
+    <Attachments>screenshot</Attachments>
+</bug>
