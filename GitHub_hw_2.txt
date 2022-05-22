@@ -1,0 +1,89 @@
+GitHub. HW_2
+
+1. На локальном репозитории сделать ветки для:
+
+- Postman      git branch Postman
+- Jmeter        git branch Jmeter
+- CheckLists      git branch CheckLists
+- Bug Reports    git branch  Bug_Reports
+- SQL          git branch  SQL
+- Charles     git branch  Charles
+- Mobile testing       git branch Mobile_testing                   
+ 
+2. Запушить все ветки на внешний репозиторий     git push -u origin Postman Jmeter CheckLists Bug_Reports SQL Charles Mobile_testing  
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта  
+
+
+Меняем ветку:   git checkout Bug_Reports
+
+Создаём файл: touch Bug_reports.txt
+Вносим изменения: vim Bug_reports.txt
+нажать "i" вводим текст
+
+"ID"
+"Title(краткое описание)"    основной
+"Description(Подробное описание)"
+"Req id(id требованияя)"
+"Steps To Rreproduce(шаги)"      основной
+"Actual Results(фактический результат)"    основной
+"Expected Results(ожидаемый результат)"    основной
+"Severity(важность)"
+"Priority(срочность)"
+"Attachments(приложение,скриншот,видео,лог)"
+"Workaround(возможность обойти баг)"
+"Status"
+
+Cохранить и выйти: "esc" ":wq"
+
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+git add . Bug_reports.txt
+git commit -m "add bug_reports"
+git push
+
+
+5. Вмержить ветку Bag Reports в Main  
+
+git checkout main
+git merge Bug_Reports
+
+6. Запушить main на внешний репозиторий.
+
+git push -u origin main
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+Меняем ветку: git checkout CheckLists
+Создаём файл: touch CheckLists.txt
+Вносим изменения: vim CheckLists.txt
+нажать "i" вводить текст
+
+ID 
+Priority(приоретет)	
+Req(ссылка на требование) 
+Module(модуль) 
+Title(название) 
+Test steps(шаги) 
+Expected Result(ожидаемый) 
+Status 
+Bug
+
+Cохранить и выйти: "esc" ":wq"
+
+8. Запушить структуру на внешний репозиторий 
+
+git add CheckLists.txt
+git commit -m "add CheckLists"
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main   
+
+  На web-интерфейсе перейти в ветку Check-Lists 
+  Нажать Compare & pull request - Сreate pull request
+
+10. Синхронизировать Внешнюю и Локальную ветки Main    
+
+git checkout main
+git pull
