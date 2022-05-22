@@ -147,7 +147,9 @@ git clone git@github.com:AndreiHeranok/XML.git
 
 Добавить файл под гит. git add . new.xml
 
-Закоммитить файл. git commit -m "add xmlОтправить файл на внешний GitHub репозиторий. git push
+Закоммитить файл. git commit -m "add xml"
+
+Отправить файл на внешний GitHub репозиторий. git push
 
 Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
 
@@ -156,7 +158,7 @@ git clone git@github.com:AndreiHeranok/XML.git
 нажать клавишу "i" ввести текст
 
 <info>
- <FIO>Heranok Andrei Vvich</FIO>
+ <FIO>Heranok Andrei Vladimirovich</FIO>
  <AGE>29</AGE>
  <number_of_pets>1</number_of_pets>
  <Future_desired_salary>500</Future_desired_salary>
@@ -393,4 +395,3 @@ edit this file
 Commit changes
 
 Синхронизировать внешний и локальный репозиторий TXT git pull
-
